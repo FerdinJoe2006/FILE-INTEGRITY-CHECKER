@@ -1,38 +1,38 @@
-🛡️ File Integrity Checker (Python)
+ File Integrity Checker (Python)
 
 A Python-based File Integrity Monitoring (FIM) tool that helps detect unauthorized or accidental file modifications using cryptographic hash verification.
 This project securely tracks file changes, deletions, and integrity status through a simple command-line interface.
 
-🚀 Features
+ Features
 
-🔐 SHA-256 hash-based integrity verification
+ SHA-256 hash-based integrity verification
 
-📁 Register files for continuous monitoring
+ Register files for continuous monitoring
 
-🔍 Detect file modifications, deletions, and size changes
+ Detect file modifications, deletions, and size changes
 
-🗂️ Persistent integrity database using JSON
+ Persistent integrity database using JSON
 
-🔄 Update baseline hashes when changes are expected
+ Update baseline hashes when changes are expected
 
-📊 Full system scan with summarized results
+ Full system scan with summarized results
 
-🖥️ User-friendly menu-driven CLI
+ User-friendly menu-driven CLI
 
-📂 Project Structure
+ Project Structure
 File-Integrity-Checker/
 │
 ├── integrity_database.json   # Auto-generated integrity database
 ├── file_integrity_checker.py # Main Python application
 └── README.md                 # Project documentation
 
-⚙️ Requirements
+ Requirements
 
 Python 3.7 or higher
 
 No external libraries required (uses Python standard library only)
 
-▶️ How to Run
+ How to Run
 
 Clone the repository
 
@@ -44,7 +44,7 @@ Run the program
 
 python file_integrity_checker.py
 
-🧭 Menu Options
+ Menu Options
 Option	Description
 1	Register a new file for monitoring
 2	Check integrity of a specific file
@@ -53,7 +53,7 @@ Option	Description
 5	Update baseline hash for a modified file
 6	Remove a file from monitoring
 7	Exit the program
-📝 How It Works
+ How It Works
 
 When a file is registered, its SHA-256 hash, size, and timestamp are stored.
 
@@ -73,7 +73,7 @@ deleted
 
 All records are saved in integrity_database.json.
 
-📌 Example Use Cases
+ Example Use Cases
 
 Detect unauthorized changes to critical system files
 
@@ -83,7 +83,7 @@ Educational demonstration of cryptographic hashing
 
 Basic intrusion detection support
 
-🔐 Security Notes
+ Security Notes
 
 Uses SHA-256, a secure cryptographic hashing algorithm
 
@@ -91,21 +91,21 @@ Reads files in chunks to efficiently handle large files
 
 Absolute paths prevent duplicate or ambiguous file tracking
 
-🧪 Sample Output
-✓ File intact: config.txt
-⚠ ALERT: File modified: data.json
-⚠ WARNING: File 'logs.txt' has been deleted!
+ Sample Output
+ File intact: config.txt
+ ALERT: File modified: data.json
+ WARNING: File 'logs.txt' has been deleted!
 
-📜 License
+ License
 
 This project is open-source and available under the MIT License.
 
-👨‍💻 Author
+ Author
 
 CODTECH Project
 Built to demonstrate file integrity monitoring using Python.
 
-⭐ Future Enhancements (Optional)
+ Future Enhancements (Optional)
 
 Directory monitoring
 
